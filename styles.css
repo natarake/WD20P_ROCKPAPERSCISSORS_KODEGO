@@ -1,0 +1,93 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.customContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1c1c;
+  flex-direction: column;
+  color: white;
+}
+
+.selections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+}
+
+.selection {
+  height: 100px;
+  width: 100px;
+  font-size: 48px;
+  border-radius: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  transition: 0.1s ease-in-out;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.resultContainer {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  color: #e2e2e2;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.resultSelection {
+  opacity: 0.5;
+}
+
+.resultSelection.winner {
+  opacity: 1;
+  font-size: 36px;
+}
+
+#matchHistory li {
+  list-style: none;
+}
+
+.endGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#endGameButton {
+  height: 100px;
+  width: 100px;
+  font-size: 48px;
+  border-radius: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  transition: 0.1s ease-in-out;
+}
+
+#endGameButton:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Rock Paper Scissors</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="customContainer">
+      <div class="selections">
+        <button class="selection" id="rock" value="Rock">✊</button>
+        <button class="selection" id="paper" value="Paper">🤚</button>
+        <button class="selection" id="scissors" value="Scissors">✌️</button>
+      </div>
+      <div class="results">
+        <div>👱 <span id="playerScore">0</span></div>
+        <div data-final-column>🤖 <span id="computerScore">0</span></div>
+      </div>
+      <div class="resultContainer">
+        <div id="hands"></div>
+        <div id="result"></div>
+        <button id="endGameButton">🔴</button>
+        <div id="declareWinner"></div>
+      </div>
+      <table id="myTable" class="container table table-dark mt-3">
+        <tr>
+          <td>Player</td>
+          <td>Computer</td>
+          <td>Result</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
